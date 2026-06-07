@@ -2,7 +2,7 @@ print("sample for python")
 
 username = "ABHINIVESH"
 exp = 10
-value = 12.000
+value = 128000
 salary = 35000
 
 print("username",username)
