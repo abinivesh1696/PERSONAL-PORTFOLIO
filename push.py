@@ -3,6 +3,7 @@ print("sample for python")
 username = "ABHINIVESH"
 exp = 10
 value = 12.000
+salary = 35000
 
 print("username",username)
 print("exp",exp)
@@ -10,3 +11,4 @@ print("exp",exp)
 print(type (username))
 print(type (exp))
 print(type(value))
+print(type(salary))
