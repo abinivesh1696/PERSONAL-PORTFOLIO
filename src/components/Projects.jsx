@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import { FaBriefcase, FaExchangeAlt } from 'react-icons/fa'
+import SkillSwapBanner from '../assets/skillswap-banner.png'
 
 const Projects = () => {
   const projects = [
@@ -12,6 +13,7 @@ const Projects = () => {
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs'],
       icon: <FaBriefcase />,
       color: '#6c63ff',
+      image: null,
     },
     {
       title: 'Skill Swap Web',
@@ -21,6 +23,7 @@ const Projects = () => {
       tech: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
       icon: <FaExchangeAlt />,
       color: '#00d4aa',
+      image: SkillSwapBanner,
     },
   ]
 
@@ -57,16 +60,20 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: 0.2 * index }}
             >
               <div className="project-image">
-                <div
-                  className="project-image-gradient"
-                  style={{
-                    background: `linear-gradient(135deg, ${project.color}33 0%, ${project.color}11 100%)`,
-                  }}
-                >
-                  <span className="project-image-icon" style={{ color: project.color }}>
-                    {project.icon}
-                  </span>
-                </div>
+                {project.image ? (
+                  <img src={project.image} alt={project.title} className="project-image-banner" />
+                ) : (
+                  <div
+                    className="project-image-gradient"
+                    style={{
+                      background: `linear-gradient(135deg, ${project.color}33 0%, ${project.color}11 100%)`,
+                    }}
+                  >
+                    <span className="project-image-icon" style={{ color: project.color }}>
+                      {project.icon}
+                    </span>
+                  </div>
+                )}
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
