@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import { FaBriefcase, FaExchangeAlt } from 'react-icons/fa'
+import skillSwapBanner from '../assets/SkillSwap.png'
 
 const Projects = () => {
   const projects = [
@@ -22,7 +23,7 @@ const Projects = () => {
       tech: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
       icon: <FaExchangeAlt />,
       color: '#00d4aa',
-      image: '/src/assets/skillswap-banner.svg',
+      image: skillSwapBanner,
     },
   ]
 
