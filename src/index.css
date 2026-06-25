@@ -296,6 +296,15 @@ button {
   padding: 12px 0;
 }
 
+[data-theme="light"] .navbar.scrolled {
+  background: rgba(245, 247, 250, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 .navbar .container {
   display: flex;
   align-items: center;
@@ -1367,7 +1376,7 @@ button {
   }
 
   [data-theme="light"] .nav-links {
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.95);
     border-left: 1px solid rgba(91, 84, 217, 0.1);
   }
 
@@ -1440,8 +1449,7 @@ button {
 
 /* ===== LIGHT THEME OVERRIDES ===== */
 [data-theme="light"] .nav-links {
-  background: rgba(255, 255, 255, 0.98);
-  border-left: 1px solid rgba(91, 84, 217, 0.1);
+  background: transparent;
 }
 
 [data-theme="light"] .nav-link {
