@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
+import { FiSun, FiMoon } from 'react-icons/fi'
 
-const Navbar = ({ activeSection }) => {
+const Navbar = ({ activeSection, isDarkMode, setIsDarkMode }) => {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -59,6 +60,14 @@ const Navbar = ({ activeSection }) => {
           <span></span>
           <span></span>
           <span></span>
+        </button>
+        <button
+          className="theme-toggle"
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          aria-label="Toggle theme"
+          title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
         </button>
       </div>
     </nav>

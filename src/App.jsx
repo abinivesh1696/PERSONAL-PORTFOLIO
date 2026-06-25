@@ -14,6 +14,16 @@ import BackToTop from './components/BackToTop'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const [isDarkMode, setIsDarkMode] = useState(true)
+
+  useEffect(() => {
+    // Apply theme to document
+    if (isDarkMode) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light')
+    }
+  }, [isDarkMode])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +48,7 @@ function App() {
   return (
     <>
       <Particles />
-      <Navbar activeSection={activeSection} />
+      <Navbar activeSection={activeSection} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <main>
         <Hero />
         <About />
