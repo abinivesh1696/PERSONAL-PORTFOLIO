@@ -22,7 +22,7 @@ const Projects = () => {
       tech: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
       icon: <FaExchangeAlt />,
       color: '#00d4aa',
-      image: '/src/assets/skillswap-banner.png',
+      image: '/src/assets/skillswap-banner.svg',
     },
   ]
 
