@@ -6,6 +6,17 @@
     <meta name="description" content="Abinivesh KV - Frontend Developer Portfolio. Passionate and skilled developer specializing in React.js, JavaScript, and modern web technologies." />
     <meta name="keywords" content="Abinivesh KV, Frontend Developer, React, JavaScript, Portfolio, Web Developer, Chennai" />
     <meta name="author" content="Abinivesh KV" />
+    <script>
+      (function() {
+        try {
+          // Force initial theme to light and persist preference
+          localStorage.setItem('isDarkMode', JSON.stringify(false));
+          document.documentElement.setAttribute('data-theme', 'light');
+        } catch (e) {
+          // ignore
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">

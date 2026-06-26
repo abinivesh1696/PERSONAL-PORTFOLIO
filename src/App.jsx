@@ -14,10 +14,21 @@ import BackToTop from './components/BackToTop'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
-  const [isDarkMode, setIsDarkMode] = useState(true)
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    try {
+      const saved = localStorage.getItem('isDarkMode')
+      return saved !== null ? JSON.parse(saved) : false
+    } catch (e) {
+      return false
+    }
+  })
 
   useEffect(() => {
-    // Apply theme to document
+    // persist preference and apply theme to document
+    try {
+      localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode))
+    } catch (e) {}
+
     if (isDarkMode) {
       document.documentElement.setAttribute('data-theme', 'dark')
     } else {

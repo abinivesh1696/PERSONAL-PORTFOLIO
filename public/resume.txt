@@ -1,0 +1,3 @@
+This is a placeholder resume file. Replace this file with your actual resume at public/resume.pdf (same name 'resume.pdf') to enable PDF download.
+
+If you want a PDF instead, place your PDF at: public/resume.pdf

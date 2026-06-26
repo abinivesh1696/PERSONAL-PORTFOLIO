@@ -393,6 +393,32 @@ button {
   transform: rotate(20deg);
 }
 
+/* ===== RESUME BUTTON ===== */
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(108, 99, 255, 0.08);
+  border: 1px solid rgba(108, 99, 255, 0.12);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  margin-left: 12px;
+}
+
+.resume-btn:hover {
+  background: rgba(108, 99, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.resume-text {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { FiSun, FiMoon } from 'react-icons/fi'
+import { FiSun, FiMoon, FiDownload } from 'react-icons/fi'
 
 const Navbar = ({ activeSection, isDarkMode, setIsDarkMode }) => {
   const [scrolled, setScrolled] = useState(false)
@@ -61,6 +61,17 @@ const Navbar = ({ activeSection, isDarkMode, setIsDarkMode }) => {
           <span></span>
           <span></span>
         </button>
+        <a
+          className="resume-btn"
+          href="/resume.pdf"
+          download
+          aria-label="Download resume"
+          title="Download resume"
+        >
+          <FiDownload size={18} />
+          <span className="resume-text">Resume</span>
+        </a>
+
         <button
           className="theme-toggle"
           onClick={() => setIsDarkMode(!isDarkMode)}

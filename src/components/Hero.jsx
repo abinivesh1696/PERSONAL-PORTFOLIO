@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiDownload, FiMail } from 'react-icons/fi'
+import { FiMail, FiArrowRight, FiEye } from 'react-icons/fi'
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa'
 
 const Hero = () => {
@@ -31,8 +31,12 @@ const Hero = () => {
               <FiMail />
               Get In Touch
             </a>
+            <a href="/resume.pdf" className="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="View resume">
+              <FiEye />
+              View Resume
+            </a>
             <a href="#projects" className="btn btn-outline">
-              <FiDownload />
+              <FiArrowRight />
               View Projects
             </a>
           </div>
