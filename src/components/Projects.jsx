@@ -25,6 +25,7 @@ const Projects = () => {
       icon: <FaExchangeAlt />,
       color: '#00d4aa',
       image: skillSwapBanner,
+      liveUrl: 'https://skill-swap-yuph.vercel.app/',
     },
   ]
 
@@ -91,7 +92,12 @@ const Projects = () => {
                   <a href="https://github.com/abinivesh1696" target="_blank" rel="noopener noreferrer" className="project-link">
                     <FiGithub /> Code
                   </a>
-                  <a href="#" className="project-link">
+                  <a
+                    href={project.liveUrl || '#'}
+                    target={project.liveUrl ? '_blank' : undefined}
+                    rel={project.liveUrl ? 'noopener noreferrer' : undefined}
+                    className="project-link"
+                  >
                     <FiExternalLink /> Live Demo
                   </a>
                 </div>
