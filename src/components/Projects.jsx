@@ -15,6 +15,7 @@ const Projects = () => {
       icon: <FaBriefcase />,
       color: '#6c63ff',
       image: connectWithBanner,
+      liveUrl: 'https://connect-with-job-portal.vercel.app/',
     },
     {
       title: 'Skill Swap Web',
