@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
           <h1 className="hero-title">
             Hi, I'm
-            <span className="hero-name"> Abinivesh KV</span>
+            <span className="hero-name"> ABINIVESH KV</span>
           </h1>
           <p className="hero-role">Frontend Developer</p>
           <p className="hero-description">
@@ -47,7 +47,7 @@ const Hero = () => {
               <div className="stat-label">Months Experience</div>
             </div>
             <div className="stat-item">
-              <div className="stat-value">2+</div>
+              <div className="stat-value">4+</div>
               <div className="stat-label">Projects Built</div>
             </div>
             <div className="stat-item">

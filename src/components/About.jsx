@@ -4,7 +4,7 @@ import { FiMapPin, FiMail, FiPhone, FiBriefcase } from 'react-icons/fi'
 const About = () => {
   const codeLines = [
     { num: 1, content: <><span className="code-keyword">const</span> <span className="code-variable">developer</span> <span className="code-bracket">=</span> <span className="code-bracket">{'{'}</span></> },
-    { num: 2, content: <>&nbsp;&nbsp;name: <span className="code-string">"Abinivesh KV"</span>,</> },
+    { num: 2, content: <>&nbsp;&nbsp;name: <span className="code-string">"ABINIVESH KV"</span>,</> },
     { num: 3, content: <>&nbsp;&nbsp;role: <span className="code-string">"Frontend Developer"</span>,</> },
     { num: 4, content: <>&nbsp;&nbsp;location: <span className="code-string">"Chennai, TN"</span>,</> },
     { num: 5, content: <>&nbsp;&nbsp;education: <span className="code-string">"B.E. CSE"</span>,</> },
