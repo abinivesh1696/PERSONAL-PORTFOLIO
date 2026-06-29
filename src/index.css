@@ -1470,7 +1470,8 @@ button {
   }
 }
 
-/* ===== LIGHT THEME OVERRIDES ===== */
+
+/* ===> LIGHT THEME OVERRIDES ===== */
 [data-theme="light"] .nav-links {
   background: transparent;
 }
