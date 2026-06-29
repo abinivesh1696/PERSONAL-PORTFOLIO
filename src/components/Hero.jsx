@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { FiMail, FiArrowRight, FiEye } from 'react-icons/fi'
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa'
+import profilePhoto from '../assets/portfolio-image1.png'
 
 const Hero = () => {
   return (
@@ -65,7 +66,11 @@ const Hero = () => {
           <div className="hero-avatar-wrapper">
             <div className="hero-avatar-ring"></div>
             <div className="hero-avatar">
-              <span className="hero-avatar-initials">AK</span>
+              <img
+                src={profilePhoto}
+                alt="Abinivesh KV portrait"
+                className="hero-avatar-image"
+              />
             </div>
             <div className="hero-avatar-glow"></div>
             <motion.div
