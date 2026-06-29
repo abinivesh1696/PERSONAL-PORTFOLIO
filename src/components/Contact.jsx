@@ -85,12 +85,11 @@ const Contact = () => {
             transition={{ duration: 0.7 }}
           >
             <h3>
-              Let's Build Something <span className="gradient-text">Amazing</span>
+              Let's Build <span className="gradient-text">Something Amazing</span>
             </h3>
             <p>
               I'm always open to discussing new projects, creative ideas, or opportunities 
-              to be part of your vision. Feel free to reach out through any of the channels 
-              below or use the contact form.
+              to be part of your vision. Feel free to reach out through use the contact form.
             </p>
 
             <div className="contact-items">

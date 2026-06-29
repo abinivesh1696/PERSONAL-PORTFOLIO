@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="hero-stats">
             <div className="stat-item">
               <div className="stat-value">6+</div>
-              <div className="stat-label">Months Experience</div>
+              <div className="stat-label">Months Internship Experience</div>
             </div>
             <div className="stat-item">
               <div className="stat-value">4+</div>

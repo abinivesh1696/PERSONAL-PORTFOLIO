@@ -13,7 +13,7 @@ const Skills = () => {
       icon: <FiTool />,
       iconClass: 'tools',
       title: 'Tools & Technologies',
-      skills: ['Git & GitHub', 'VS Code', 'REST APIs', 'NPM', 'Responsive Design', 'Chrome DevTools', 'Postman'],
+      skills: ['Git & GitHub', 'VS Code', 'REST APIs', 'NPM', 'Responsive Design'],
     },
     {
       icon: <FiUsers />,
