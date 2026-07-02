@@ -16,6 +16,7 @@ const Footer = () => {
             aria-label="LinkedIn"
           >
             <FaLinkedinIn />
+            <p> LinkedIn </p>
           </a>
           <a
             href="https://github.com/abinivesh1696"
