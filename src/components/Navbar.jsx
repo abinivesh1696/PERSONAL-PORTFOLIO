@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FiSun, FiMoon, FiDownload } from 'react-icons/fi'
+import resume from '../assets/ABINIVESH-FD.pdf'
 
 const Navbar = ({ activeSection, isDarkMode, setIsDarkMode }) => {
   const [scrolled, setScrolled] = useState(false)
@@ -63,7 +64,7 @@ const Navbar = ({ activeSection, isDarkMode, setIsDarkMode }) => {
         </button>
         <a
           className="resume-btn"
-          href="/resume.pdf"
+          href={resume}
           download
           aria-label="Download resume"
           title="Download resume"
