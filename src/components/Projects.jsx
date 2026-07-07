@@ -90,7 +90,7 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href="https://github.com/abinivesh1696" target="_blank" rel="noopener noreferrer" className="project-link">
+                  <a href="https://github.com/abinivesh1696/ConnectWith-Job-portal#" target="_blank" rel="noopener noreferrer" className="project-link">
                     <FiGithub /> Code
                   </a>
                   <a
