@@ -98,7 +98,7 @@ const Projects = () => {
                     rel={project.codeUrl ? 'noopener noreferrer' : undefined}
                     className="project-link"
                   >
-                    <FiGithub /> Code
+                    <FiGithub /> Code-GitHub repository
                   </a>
                   <a
                     href={project.liveUrl || '#'}
@@ -106,7 +106,7 @@ const Projects = () => {
                     rel={project.liveUrl ? 'noopener noreferrer' : undefined}
                     className="project-link"
                   >
-                    <FiExternalLink /> Live Demo in my deployment
+                    <FiExternalLink /> Live Demo deployment
                   </a>
                 </div>
               </div>
