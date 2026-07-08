@@ -16,7 +16,6 @@ const Projects = () => {
       color: '#6c63ff',
       image: connectWithBanner,
       liveUrl: 'https://connect-with-job-portal.vercel.app/',
-      codeUrl: 'https://github.com/abinivesh1696/ConnectWith-Job-portal',
     },
     {
       title: 'Skill Swap Web',
@@ -28,7 +27,6 @@ const Projects = () => {
       color: '#00d4aa',
       image: skillSwapBanner,
       liveUrl: 'https://skill-swap-yuph.vercel.app/',
-      codeUrl: 'https://github.com/abinivesh1696/SkillSwap',
     },
   ]
 
@@ -92,12 +90,7 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a
-                    href={project.codeUrl || '#'}
-                    target={project.codeUrl ? '_blank' : undefined}
-                    rel={project.codeUrl ? 'noopener noreferrer' : undefined}
-                    className="project-link"
-                  >
+                  <a href="https://github.com/abinivesh1696/ConnectWith-Job-portal#" target="_blank" rel="noopener noreferrer" className="project-link">
                     <FiGithub /> Code
                   </a>
                   <a
