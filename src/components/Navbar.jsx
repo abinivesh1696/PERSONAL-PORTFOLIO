@@ -70,7 +70,7 @@ const Navbar = ({ activeSection, isDarkMode, setIsDarkMode }) => {
           title="Download resume"
         >
           <FiDownload size={18} />
-          <span className="resume-text">Resume</span>
+          <span className="resume-text">RESUME</span>
         </a>
 
         <button
